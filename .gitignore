@@ -1,5 +1,5 @@
 #application-dev.properties
-application-prod-db.properties
+/src/main/resources/application-prod-db.properties
 
 
 HELP.md
