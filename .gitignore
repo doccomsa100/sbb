@@ -1,6 +1,6 @@
 #application-dev.properties
 application-prod-db.properties
-application-prod.properties
+
 
 HELP.md
 .gradle
