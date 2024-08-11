@@ -25,8 +25,7 @@ cp $PROJECT_FULL_PATH/build/libs/*.jar $JAR_FILE
 #nohup java -jar $JAR_FILE 1>$APP_LOG 2>$ERROR_LOG &
 #nohup java -jar $JAR_FILE 1>>$APP_LOG 2>>$ERROR_LOG &
 nohup java -jar \
-	-Dspring.config.location=classpath:/application.properties,/home/ec2-user/app/application-prod-db.properties
-	-Dspring.profiles.active=prod \
+	-Dspring.config.location=classpath:/application.properties,/home/ec2-user/app/application-prod-db.properties \
 	$JAR_FILE 1> /dev/null 2>&1 &
 
 sleep 30s
