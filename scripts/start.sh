@@ -21,6 +21,8 @@ fi
 echo "$TIME_NOW > $JAR_FILE 파일 복사" >> $DEPLOY_LOG
 cp $PROJECT_FULL_PATH/build/libs/*.jar $JAR_FILE
 
+cd $PROJECT_FULL_PATH
+
 # jar 파일실행
 #nohup java -jar $JAR_FILE 1>$APP_LOG 2>$ERROR_LOG &
 #nohup java -jar $JAR_FILE 1>>$APP_LOG 2>>$ERROR_LOG &
